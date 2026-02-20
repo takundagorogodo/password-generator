@@ -11,10 +11,10 @@ copyIconEl.addEventListener("click", () => {
     copyPassword();
 
     if (inputEl.value) {
-        alertContainer.classList.remove("active");
+        alertContainer.classList.add("active");
         setTimeout(() => {
-            alertContainer.classList.add("active");
-        }, 2000);
+            alertContainer.classList.remove("active");
+        },2000);
     }
 });
 
